@@ -6,7 +6,7 @@ context('Integration test index page', () => {
   it('.get', () => {
     cy.get('.v-card').should('have.class', 'v-card')
     cy.get('.v-card__title').should('contain', 'Nuxt.js template')
-    cy.get('.v-card__text').find('a').should('have.length', 4)
+    cy.get('.v-card__text').find('a').should('have.length', 1)
     cy.get('a').should('have.attr', 'href')
       .debug()
   })
