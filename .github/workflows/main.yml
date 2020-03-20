@@ -24,8 +24,8 @@ jobs:
 
     # Runs a single command using the runners shell
 
-    - name: Run npm
-      run: npm start
+    - name: Run project
+      run: npm run dev
   
     - name: Run Cypress
       run: npx cypress run --record --key d4d2c3f6-5ee2-4e53-acc1-006700ba0bd8 
