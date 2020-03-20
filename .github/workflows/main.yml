@@ -16,9 +16,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
-    docker:
-      - image: cypress/base:8
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -26,8 +23,6 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run npm
-      run: npm run build
-      
+
     - name: Run Cypress
       run: npx cypress run --record --key d4d2c3f6-5ee2-4e53-acc1-006700ba0bd8 
